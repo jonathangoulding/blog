@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog - Jonathan Goulding </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/bulma-divider.min.css">
+</head>
+
+<body>
+    <div class="bg-img">
+        <section class="section">
+            <div class="container bg-img-text">
+                <h1 class="title has-text-white">
+                    Jonathan Goulding's Blog
+                </h1>
+                <h3 class="subtitle has-text-white">
+                    Software Engineer
+                </h3>
+            </div>
+        </section>
+    </div>
+    <section class="hero ">
+        <div class="hero-body">
+            <div class="container">
+                <div class="is-divider"></div>
+                <section class="section">
+                    <div class="columns">
+                        <div class="column is-8 is-offset-2">
+                            <div class="content is-medium">
+                                <h2 class="subtitle is-4">March 5, 2021</h2>
+                                <h1 class="title">Simple Mini blog</h1>
+                                <p>This is a simple mini blog.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="columns">
+                        <div class="column is-8 is-offset-2">
+                            <div class="content is-medium">
+                                <h2 class="subtitle is-4">March 5, 2021</h2>
+                                <h1 class="title">Deploying a vuepress site to GitHub Pages</h1>
+                                <p> The script below deploys a vuepress site to git hub pages on branch gh-pages</p>
+                                <pre><code>
+name: Deploy to Github Pages
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build vuepress and deploy to gh-pages branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # install
+          npm ci
+          # build
+          npm run build
+          # navigate into the build output directory
+          cd src/.vuepress/dist
+          # Git push to gh-pages
+          git config --global init.defaultBranch main
+          git init 
+          git config --local user.email "${GITHUB_ACTOR}"
+          git config --local user.name "${GITHUB_ACTOR}"
+          git add -A
+          git commit -m 'deploy'
+          git push -f https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git main:gh-pages
+                                    </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <!-- newsletter -->
+    <section class="section">
+        <div class="columns">
+            <div class="column is-10 is-offset-1">
+                <div class="container has-text-centered is-fluid">
+                    <div class="hero is-light">
+                        <div class="hero-body">
+                            <h2 class="title is-4">Find me on:</h1>
+                                <div class="columns is-mobile is-centered">
+                                    <div class="column is-half">
+                                      <div class="columns is-mobile">
+                                        <div class="column">
+                                          <a href="https://github.com/jonathangoulding">
+                                            <span class="icon overrider-link-style">
+                                              <i class="fab fa-github-square"></i>
+                                            </span>
+                                          </a>
+                                        </div>
+                                        <div class="column">
+                                          <a href="https://gitlab.com/jonathangoulding?nav_source=navbar">
+                                            <span class="icon overrider-link-style">
+                                              <i class="fab fa-gitlab"></i>
+                                            </span>
+                                          </a>
+                                        </div>
+                                        <div class="column">
+                                          <a href="https://www.linkedin.com/in/jonathan-goulding-78a5a4114/">
+                                            <span class="icon overrider-link-style">
+                                              <i class="fab fa-linkedin"></i>
+                                            </span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Articles -->
+    <section class="hero ">
+        <div class="hero-body">
+            <div class="container">
+
+                <section class="section">
+                    <div class="columns is-variable is-8">
+                        <div class="column is-5 is-offset-1 ">
+                            <div class="content is-medium">
+                                <h2 class="subtitle is-5 has-text-grey">December 23, 2018</h2>
+                                <h1 class="title has-text-black is-3">Custom 404 Pages</h1>
+                                <p class="has-text-dark">This starter template includes a custom 404 Not Found error
+                                    page, located at
+                                    /source/404.blade.php.
+                                    To preview the 404 page, you can visit /404 in your browser. Depending...</p>
+                            </div>
+                        </div>
+                        <div class="column is-5">
+                            <div class="content is-medium">
+                                <h2 class="subtitle is-5 has-text-grey">December 25, 2018</h2>
+                                <h1 class="title has-text-black is-3">Fuse Search</h1>
+                                <p class="has-text-dark">To provide fast, local search of your blog, this starter
+                                    template comes with a
+                                    pre-built Vue.js
+                                    component that uses Fuse.js. Fuse.js is a "lightweight fuzzy-search library with
+                                    no...</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="is-divider"></div>
+                <section class="section">
+                    <div class="columns is-variable is-8">
+                        <div class="column is-5 is-offset-1">
+                            <div class="content is-medium">
+                                <h2 class="subtitle is-5 has-text-grey">December 25, 2018</h2>
+                                <h1 class="title has-text-black is-3">Getting Started</h1>
+                                <p class="has-text-dark">This is a starter template for creating a beautiful,
+                                    customizable blog with
+                                    minimal
+                                    effort. You’ll only have to change a few settings and you’re ready to go. As with
+                                    all Jigsaw sites,
+                                    configuration settings can be found in config</p>
+                            </div>
+                        </div>
+                        <div class="column is-5">
+                            <div class="content is-medium">
+                                <h2 class="subtitle is-5 has-text-grey">December 25, 2018</h2>
+                                <h1 class="title has-text-black is-3">Getting Started</h1>
+                                <p class="has-text-dark">This is a starter template for creating a beautiful,
+                                    customizable blog with
+                                    minimal
+                                    effort. You’ll only have to change a few settings and you’re ready to go. As with
+                                    all Jigsaw sites,
+                                    configuration settings can be found in config</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</body>
+
+<style>
+    .bg-img {
+        background-image: url("public/images/public_img_backgrounds_grass-green-plants-natural.jpg");
+        opacity: 0.7;
+        background-color: #020202;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .bg-img-text {
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .overrider-link-style {
+        color: grey;
+        text-decoration: none;
+    }
+</style>
+
+</html>
