@@ -1,0 +1,23 @@
+.bg-img {
+  background-image: url("..//images/public_img_backgrounds_grass-green-plants-natural.jpg");
+  opacity: 0.7;
+  background-color: #020202;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-img-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.overrider-link-style {
+  color: grey;
+  text-decoration: none;
+}

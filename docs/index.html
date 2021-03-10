@@ -11,6 +11,7 @@
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/public/css/index.css">
 </head>
 
 <body>
@@ -18,11 +19,14 @@
         <section class="section">
             <div class="container bg-img-text">
                 <h1 class="title has-text-white">
-                    Jonathan Goulding's Blog
+                    Jonathan Goulding
                 </h1>
                 <h3 class="subtitle has-text-white">
                     Software Engineer
                 </h3>
+                <h1 class="title has-text-white">
+                    Blog <i class="fas fa-tools fa-xs"></i>
+                </h1>
             </div>
         </section>
     </div>
@@ -140,23 +144,22 @@ jobs:
                     <div class="columns is-variable is-8">
                         <div class="column is-5 is-offset-1 ">
                             <div class="content is-medium">
-                                <h2 class="subtitle is-5 has-text-grey">December 23, 2018</h2>
-                                <h1 class="title has-text-black is-3">Custom 404 Pages</h1>
-                                <p class="has-text-dark">This starter template includes a custom 404 Not Found error
-                                    page, located at
-                                    /source/404.blade.php.
-                                    To preview the 404 page, you can visit /404 in your browser. Depending...</p>
+                                <h2 class="subtitle is-5 has-text-grey">March 10, 2021</h2>
+                                <h1 class="title has-text-black is-3">Orchestrating pipelines</h1>
+                                <p class="has-text-dark"> I am currently working towards an orchestated docker system using gitlab ci to 
+                                    make composable gitlab ci jobs that can be used through multiple project. 
+                                    The jobs (mainly test) can pull the orechestraion repository and use the docker compose to stand up the system
+                                in order to test it in the pipeline. </p>
                             </div>
                         </div>
                         <div class="column is-5">
                             <div class="content is-medium">
                                 <h2 class="subtitle is-5 has-text-grey">December 25, 2018</h2>
-                                <h1 class="title has-text-black is-3">Fuse Search</h1>
-                                <p class="has-text-dark">To provide fast, local search of your blog, this starter
-                                    template comes with a
-                                    pre-built Vue.js
-                                    component that uses Fuse.js. Fuse.js is a "lightweight fuzzy-search library with
-                                    no...</p>
+                                <h1 class="title has-text-black is-3">Lorem ipsum dolor sit amet <i class="fas fa-tools fa-xs"></i></h1>
+                                <p class="has-text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -167,25 +170,21 @@ jobs:
                         <div class="column is-5 is-offset-1">
                             <div class="content is-medium">
                                 <h2 class="subtitle is-5 has-text-grey">December 25, 2018</h2>
-                                <h1 class="title has-text-black is-3">Getting Started</h1>
-                                <p class="has-text-dark">This is a starter template for creating a beautiful,
-                                    customizable blog with
-                                    minimal
-                                    effort. You’ll only have to change a few settings and you’re ready to go. As with
-                                    all Jigsaw sites,
-                                    configuration settings can be found in config</p>
+                                <h1 class="title has-text-black is-3">Lorem ipsum dolor sit amet <i class="fas fa-tools fa-xs"></i></h1>
+                                <p class="has-text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div>
                         </div>
                         <div class="column is-5">
                             <div class="content is-medium">
                                 <h2 class="subtitle is-5 has-text-grey">December 25, 2018</h2>
-                                <h1 class="title has-text-black is-3">Getting Started</h1>
-                                <p class="has-text-dark">This is a starter template for creating a beautiful,
-                                    customizable blog with
-                                    minimal
-                                    effort. You’ll only have to change a few settings and you’re ready to go. As with
-                                    all Jigsaw sites,
-                                    configuration settings can be found in config</p>
+                                <h1 class="title has-text-black is-3">Lorem ipsum dolor <i class="fas fa-tools fa-xs"></i></h1>
+                                <p class="has-text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div>
                         </div>
                     </div>
@@ -194,31 +193,4 @@ jobs:
         </div>
     </section>
 </body>
-
-<style>
-    .bg-img {
-        background-image: url("public/images/public_img_backgrounds_grass-green-plants-natural.jpg");
-        opacity: 0.7;
-        background-color: #020202;
-        height: 300px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
-
-    .bg-img-text {
-        text-align: center;
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, 0%);
-    }
-
-    .overrider-link-style {
-        color: grey;
-        text-decoration: none;
-    }
-</style>
-
 </html>
