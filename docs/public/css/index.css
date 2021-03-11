@@ -1,9 +1,9 @@
 .gh-pages-action-code-acc {
-  border: none;
+  /* border: none; */
 }
 
 .code-panel {
-  /* display: none; */
   background-color: white;
   overflow: hidden;
+  display: none;
 }
