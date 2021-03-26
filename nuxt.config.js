@@ -5,7 +5,7 @@ export default {
     base: '/blog/'
   },
   head: {
-    title: 'blog',
+    title: 'Jonathan Goulding Blog',
     htmlAttrs: {
       lang: 'en'
     },
