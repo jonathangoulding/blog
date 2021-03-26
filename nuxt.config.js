@@ -22,6 +22,10 @@ export default {
     ]
   },
 
+  router: {
+    base: '/blog/'
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     'bulma'
