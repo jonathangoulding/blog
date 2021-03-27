@@ -1,7 +1,7 @@
 <template>
   <div>
-    <top />
+    <section-1 />
     <contact />
-    <bottom />
+    <section-2 />
   </div>
 </template>

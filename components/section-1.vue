@@ -56,8 +56,7 @@
 export default {
   data () {
     return {
-      viewGitHubAction: false,
-      domainSnippet: "I use the <a href=\"https://demonicfridge.com/\">demonicfridge.com</a> domain for my side projects that require a domain name. I find just having the domain makes things easier to develop and test. For example <a href=\"https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04\">securingnginx with let's encrypt</a> ."
+      viewGitHubAction: false
     }
   }
 }
