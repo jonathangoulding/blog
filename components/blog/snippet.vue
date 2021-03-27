@@ -18,6 +18,6 @@
 
 <script>
 export default {
-  props: ['title', 'date', 'para']
+  props: ['title', 'date']
 }
 </script>
