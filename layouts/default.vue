@@ -10,7 +10,7 @@
             Software Engineer
           </h3>
           <h1 class="title has-text-white">
-            Blog <i class="fas fa-tools fa-xs" />
+            Blog
           </h1>
         </div>
       </section>
