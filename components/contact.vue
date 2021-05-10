@@ -22,13 +22,6 @@
                         </span>
                       </a>
                     </div>
-                    <div class="column">
-                      <a href="https://www.linkedin.com/in/jonathan-goulding-78a5a4114/">
-                        <span class="icon">
-                          <i class="fab fa-linkedin" />
-                        </span>
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>
