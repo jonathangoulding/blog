@@ -1,3 +1,3 @@
-# blog
+# Website
 
-> Website: https://jonathangoulding.github.io/blog/
+> Website: https://jonathangoulding.github.io/
