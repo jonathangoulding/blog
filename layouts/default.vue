@@ -12,20 +12,23 @@
         </div>
       </section>
     </div>
-    <h1 class="has-text-centered mt-5">
-      <nuxt-link to="/">
-        Home
-      </nuxt-link> | <nuxt-link to="/blog">
-        Blog
-      </nuxt-link>
-    </h1>
-    <section class="section">
-      <div class="columns">
-        <div class="column is-8 is-offset-2">
-          <Nuxt />
+    <div class="section">
+      <h1 class="has-text-centered">
+        <nuxt-link to="/">
+          Home
+        </nuxt-link> | <nuxt-link to="/blog">
+          Blog
+        </nuxt-link>
+      </h1>
+      <section class="section">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <Nuxt />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+    <Footer />
   </div>
 </template>
 
