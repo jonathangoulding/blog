@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="hero-img">
+    <div v-if="$route.path === '/'" class="hero-img">
       <section class="section">
         <div class="container hero-img-text">
           <h1 class="title has-text-white">
@@ -12,7 +12,7 @@
         </div>
       </section>
     </div>
-    <div class="section">
+    <div class="section main">
       <h1 class="has-text-centered">
         <nuxt-link to="/">
           Home
@@ -33,6 +33,16 @@
 </template>
 
 <style>
+.main {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+}
+
+.section {
+  flex: 1;
+}
+
 .hero-img {
   background-image: url("/images/public_img_backgrounds_grass-green-plants-natural.jpg");
   opacity: 0.7;
