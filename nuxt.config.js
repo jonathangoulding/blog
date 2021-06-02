@@ -1,9 +1,9 @@
 export default {
   ssr: true,
   target: 'static',
-  router: {
-    base: '/blog/'
-  },
+  // router: {
+  //   base: '/blog/'
+  // },
   head: {
     title: 'Jonathan Goulding Blog',
     htmlAttrs: {
@@ -28,8 +28,7 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module'
   ],
-  modules: [
-  ],
+  modules: ['@nuxt/content'],
   build: {
   }
 }

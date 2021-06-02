@@ -9,19 +9,29 @@
           <h3 class="subtitle has-text-white">
             Software Engineer
           </h3>
-          <h1 class="title has-text-white">
-            Blog
-          </h1>
         </div>
       </section>
     </div>
-    <Nuxt />
+    <h1 class="has-text-centered mt-5">
+      <nuxt-link to="/">
+        Home
+      </nuxt-link> | <nuxt-link to="/blog">
+        Blog
+      </nuxt-link>
+    </h1>
+    <section class="section">
+      <div class="columns">
+        <div class="column is-8 is-offset-2">
+          <Nuxt />
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <style>
 .hero-img {
-  background-image: url("~assets/images/public_img_backgrounds_grass-green-plants-natural.jpg");
+  background-image: url("/images/public_img_backgrounds_grass-green-plants-natural.jpg");
   opacity: 0.7;
   background-color: #020202;
   height: 300px;
