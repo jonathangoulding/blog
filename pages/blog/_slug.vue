@@ -1,6 +1,17 @@
 <template>
   <div class="content is-medium">
     <article>
+      <NuxtLink
+        :to="'/blog'"
+      >
+        <i class="fas fa-arrow-left" />
+      </NuxtLink>
+      <h2 class="subtitle is-4">
+        {{ formatDate(article.updatedAt) }}
+      </h2>
+      <h1 class="title">
+        {{ article.title }}
+      </h1>
       <nuxt-content :document="article" />
     </article>
   </div>
@@ -12,6 +23,12 @@ export default {
     const article = await $content('articles', params.slug).fetch()
 
     return { article }
+  },
+  methods: {
+    formatDate (date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
+    }
   }
 }
 </script>

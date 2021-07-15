@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="title is-1">
-      Blog Posts
+      Articles
     </h1>
     <hr>
     <div
@@ -25,13 +25,6 @@
       </NuxtLink>
       <hr>
     </div>
-  </div>
-</template>
-  </div>
-  </div>
-  </section>
-  </div>
-  </section>
   </div>
 </template>
 

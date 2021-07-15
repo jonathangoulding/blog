@@ -1,27 +1,24 @@
 ---
 title: Deploying a vuepress site to GitHub Pages
 description: Why use a domain for side projects
-
 ---
 
-# Deploying a vuepress site to GitHub Pages
+There are some examples for deploying a Vue app using Github actions that use multiple marketplace actions or a convoluded process.
 
-I wanted to explore Github actions and understand how to deploy a website that has a
-build step.
-I had read a few tutorial that did some complicated things. Some even required
-multiple 'marketplace' actions.
-This seemed too complicated. So i tried to make it work with just a GitHub action
-and config for my <a href="https://github.com/jonathangoulding/vuepress-docs-example"> Vuepress Doc
-Example</a> repo.
+I found the simplest way is to just use the basic github actions.
+
+Repo: <a href="https://github.com/jonathangoulding/vuepress-docs-example"> Vuepress Doc
+Example</a>
+
 ```yaml
 name: Deploy to Github Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
-    
+    branches: [main]
+
   workflow_dispatch:
 
 jobs:
