@@ -19,7 +19,7 @@
         {{ article.description }}
       </p>
       <NuxtLink
-        :to="'blog/' + article.slug"
+        :to="'articles/' + article.slug"
       >
         Read Article <i class="fas fa-book-open" />
       </NuxtLink>

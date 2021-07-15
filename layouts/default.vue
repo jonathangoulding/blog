@@ -16,8 +16,8 @@
       <h1 class="has-text-centered">
         <nuxt-link to="/">
           Home
-        </nuxt-link> | <nuxt-link to="/blog">
-          Blog
+        </nuxt-link> | <nuxt-link to="/articles">
+          Articles
         </nuxt-link>
       </h1>
       <section class="section">

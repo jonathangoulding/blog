@@ -1,11 +1,15 @@
 <template>
   <div class="content is-medium">
     <article>
-      <NuxtLink
-        :to="'/blog'"
+      <button
+        class="button is-text"
+        style="
+        color: grey;
+        text-decoration: none;"
+        @click="$router.go(-1)"
       >
         <i class="fas fa-arrow-left" />
-      </NuxtLink>
+      </button>
       <h2 class="subtitle is-4">
         {{ formatDate(article.updatedAt) }}
       </h2>
